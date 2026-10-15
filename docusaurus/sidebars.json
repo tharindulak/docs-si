@@ -1,0 +1,1101 @@
+{
+  "docs": [
+    {
+      "type": "doc",
+      "id": "index",
+      "label": "Home"
+    },
+    {
+      "type": "category",
+      "label": "Get Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/introduction",
+          "label": "Introduction"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/quick-start-guide",
+          "label": "Quick Start Guide"
+        },
+        {
+          "type": "category",
+          "label": "Creating Your First Siddhi Application",
+          "items": [
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/overview",
+              "label": "Streaming Integration Overview"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/set-up-environment-and-dependencies",
+              "label": "Step 1: Set up your environment and dependencies"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/create-the-siddhi-application",
+              "label": "Step 2: Create the Siddhi Application"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/deploy-siddhi-application",
+              "label": "Step 3: Deploy the Siddhi Application"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/run-siddhi-application",
+              "label": "Step 4: Run the Siddhi Application"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/update-the-siddhi-application",
+              "label": "Step 5: Update the Siddhi Application"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/monitor-statistics",
+              "label": "Step 6: Monitor Statistics"
+            },
+            {
+              "type": "doc",
+              "id": "get-started/first-siddhi-app/export-siddhi-application-as-docker",
+              "label": "Step 7: Export the Siddhi Application as a Docker Artifact"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "get-started/architecture",
+          "label": "Architecture"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/key-concepts",
+          "label": "Key Concepts"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/about-this-release",
+          "label": "About this Release"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Learn",
+      "items": [
+        {
+          "type": "category",
+          "label": "Use Cases",
+          "items": [
+            {
+              "type": "doc",
+              "id": "guides/use-cases",
+              "label": "Use Cases Overview"
+            },
+            {
+              "type": "doc",
+              "id": "guides/extracting-data-from-static-sources-in-real-time",
+              "label": "Extracting Data from Static Sources in Real Time"
+            },
+            {
+              "type": "doc",
+              "id": "guides/receiving-data-in-transit",
+              "label": "Receiving Data in Transit"
+            },
+            {
+              "type": "doc",
+              "id": "guides/loading-and-writing-data",
+              "label": "Loading and Writing Data"
+            },
+            {
+              "type": "doc",
+              "id": "guides/publishing-data-to-event-stream-consumers",
+              "label": "Publishing Data"
+            },
+            {
+              "type": "category",
+              "label": "Stream Processing",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "guides/processing-data",
+                  "label": "Stream Processing Overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "guides/cleansing-data",
+                  "label": "Cleansing Data"
+                },
+                {
+                  "type": "doc",
+                  "id": "guides/transforming-data",
+                  "label": "Transforming Data"
+                },
+                {
+                  "type": "doc",
+                  "id": "guides/enriching-data",
+                  "label": "Enriching Data"
+                },
+                {
+                  "type": "doc",
+                  "id": "guides/summarizing-data",
+                  "label": "Summarizing Data"
+                },
+                {
+                  "type": "doc",
+                  "id": "guides/correlating-data",
+                  "label": "Correlating Data"
+                }
+              ]
+            },
+            {
+              "type": "doc",
+              "id": "guides/handling-errors",
+              "label": "Handling Errors"
+            },
+            {
+              "type": "doc",
+              "id": "guides/performing-etl-tasks",
+              "label": "Performing ETL Operations"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Tutorials",
+          "items": [
+            {
+              "type": "doc",
+              "id": "tutorials/tutorials-overview",
+              "label": "Tutorials Overview"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/performing-real-time-etl-with-mysql",
+              "label": "Performing Real-time Change Data Capture with MySQL"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/performing-real-time-etl-with-files",
+              "label": "Performing Real-time ETL with Files"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/working-with-kafka",
+              "label": "Working with Kafka"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/integrating-stores",
+              "label": "Integrating Data Stores in Streaming Integration"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/exposing-processed-data-as-api",
+              "label": "Exposing Processed Data as API"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/handling-requests-with-errors",
+              "label": "Error Handling with Data Streams"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/triggering-integrations-via-micro-integrator",
+              "label": "Triggering Integrations via MI"
+            },
+            {
+              "type": "doc",
+              "id": "tutorials/running-si-with-docker-and-kubernetes",
+              "label": "Running SI with Docker and Kubernetes"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Examples",
+          "items": [
+            {
+              "type": "category",
+              "label": "Consuming Data",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveTCPinJSONFormat",
+                  "label": "Receiving JSON Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/CSVDefaultMapping",
+                  "label": "Publishing and Receiving CSV Events via Files"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/CDCWithListeningMode",
+                  "label": "Capturing MySQL Inserts via CDC"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveGooglePubSubMessagesInTextFormat",
+                  "label": "Receiving Messages from a Google Pub/Sub Topic"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveMQTTInXMLFormat",
+                  "label": "Receiving XML events via MQTT"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveTCPinBinaryFormat",
+                  "label": "Receiving Binary Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveKafkaInBinaryFormat",
+                  "label": "Receiving Binary Events via Kafka"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveHTTPInXMLFormatWithDefaultMapping",
+                  "label": "Receiving XML Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/CDCWithPollingMode",
+                  "label": "Capturing MySQL Inserts and Updates via CDC Polling Mode"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveEventsFromFile",
+                  "label": "Receiving Events via File"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveEmailInXmlFormat",
+                  "label": "Receiving XML Events via Email"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveRabbitmqInJSONFormat",
+                  "label": "Receiving JSON Events via RabbitMQ"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveHl7InER7Format",
+                  "label": "Receiving ER7 Events via HL7"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Transforming Data",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpOAuthRequest",
+                  "label": "Publishing HTTP Events to an OAuth-protected Endpoint"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpOAuthRequestWithoutAccessToken",
+                  "label": "Publishing HTTP Events to an OAuth-protected Endpoint without an Access Token"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/DataPreprocessing",
+                  "label": "Preprocessing Data Received via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHl7InER7Format",
+                  "label": "Publishing ER7 Events via HL7"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/SweetProductionDataPreprocessing",
+                  "label": "Receiving Data via TCP and Preprocessing"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/CSVCustomMapping",
+                  "label": "Receiving and Publishing Events in Custom CSV Format"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHTTPInJsonFormatWithCustomMapping",
+                  "label": "Sending Custom JSON Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveKafkaInTextFormatWithCustomMapping",
+                  "label": "Receiving Custom Text Events via Kafka"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishKafkaInCustomAvroFormat",
+                  "label": "Publishing Custom Avro Events via Kafka"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveHl7InXmlFormat",
+                  "label": "Receiving Custom XML Messages via HL7"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveTCPInTextFormatWithCustomMapping",
+                  "label": "Receiving Custom Text Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/RegexExecutionSample",
+                  "label": "Identifying Sub-sequences in Input Sequences"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHl7InXmlFormat",
+                  "label": "Publishing XML messages via HL7"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishKafkaInJsonFormat",
+                  "label": "Publishing JSON Events via Kafka"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishEventsToFile",
+                  "label": "Publishing JSON Events to Files"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveHTTPinXMLFormatWithCustomMapping",
+                  "label": "Receiving Custom XML Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishRabbitmqInXmlFormat",
+                  "label": "Publishing XML Events via RabbitMQ"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/MathExtensionSample",
+                  "label": "Rounding up Amounts via the Math Function"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveTCPinTextFormat",
+                  "label": "Receiving Text Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishEmailInXmlFormat",
+                  "label": "Publishing Emails in XML Format"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/StringExtensionSample",
+                  "label": "Converting String Values to Lowercase"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/TextMappingWithInmemoryTransport",
+                  "label": "Text Mapping with In-memory Transport"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveHTTPInJsonFormatWithDefaultMapping",
+                  "label": "Receiving JSON Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/HelloKafka",
+                  "label": "Consuming Events from a Kafka Topic and Publishing to Another Kafka Topic"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpInXmlFormatWithCustomMapping",
+                  "label": "Publishing Custom XML Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/SNMPSetRequestApp",
+                  "label": "Sending Custom Keyvalue Events via SNMP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishTcpInJsonFormat",
+                  "label": "Publishing JSON Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpOAuthRequestWithOAuthUser",
+                  "label": "Publishing HTTP Events to an OAuth-protected Endpoint"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/MapExtensionSample",
+                  "label": "Inserting and Accessing Data in a Map"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishJmsInXmlFormat",
+                  "label": "Publishing XML Events via JMS"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveJMSInJsonFormat",
+                  "label": "Receiving JSON Events via JMS"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveHTTPInJsonFormatWithCustomMapping",
+                  "label": "Receiving Custom JSON Events via HTTP"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Enriching Data",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "examples/ExtremaBottomK",
+                  "label": "Counting the Frequency of Values with BottomK"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/GplNLPFindNameEntityType",
+                  "label": "Extracting Values from a String"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/JoinWithStoredData",
+                  "label": "Joining Streaming Data with Stored Data in RDBMS"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/Script-js-sample",
+                  "label": "Using Javascript Functions in Siddhi Applications"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-hbase",
+                  "label": "Receiving Events via Simulator and Persisting in a Store"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/HttpRequestResponseSample",
+                  "label": "Publishing HTTP Requests, Receiving Responses, and Processing Them"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/UnitConversionExtensionSample",
+                  "label": "Converting Units"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/execution-geo-sample",
+                  "label": "Processing Geo Data"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ClusTreeTestApp",
+                  "label": "Performing Streaming Learning Using a Clustree Model"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveWebSocketInXMLFormat",
+                  "label": "Receiving XML Events via Websocket"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Aggregating Data",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "examples/AggregateOverTime",
+                  "label": "Calculating Aggregations Over Time"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveAndCount",
+                  "label": "Receiving Events via HTTP Transport"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/AggregateDataIncrementally",
+                  "label": "Aggregating Data Incrementally"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-redis",
+                  "label": "Receiving Events and Persisting Them in Redis Store"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-mongodb",
+                  "label": "Receiving Events and Persisting in MongoDB Store"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Correlating Data",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "examples/PmmlModelProcessor",
+                  "label": "Making Predictions via PMML Model"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/StreamingRegressor",
+                  "label": "Making Predictions via a Regressor Model"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/TensorFlowTestApp",
+                  "label": "Performing Regression Tasks via an Imported Tensorflow Model"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishMqttInXmlFormat",
+                  "label": "Publishing XML Events via MQTT"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PatternMatching",
+                  "label": "Identifying Event Patterns Based On Order of Event Arrival"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/StreamingKMeansSample",
+                  "label": "Using StreamingML Kmeans for Clustering"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceivePrometheusMetrics",
+                  "label": "Receiving Prometheus Metrics"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/streaming-hoeffding-classifier-sample",
+                  "label": "Making Predictions via Hoeffding Classifier Model"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/SNMPGetRequestApp",
+                  "label": "Receiving Custom Key Value Events via SNMP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/ReceiveJMSInKeyvalueFormat",
+                  "label": "Receiving Key Value Events via JMS"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/IBMMessageQueue",
+                  "label": "Consuming Messages from IBM Message Queues"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/AlertsAndThresholds",
+                  "label": "Receiving Email Alerts"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/streaming-perceptron-sample",
+                  "label": "Making Predictions via a Streaming Perceptron Model"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/GeoDistanceCalculation",
+                  "label": "Calculating the Distance Between Two Locations"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Publishing Data",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "examples/PublishTcpInTextFormat",
+                  "label": "Publishing Text Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishGooglePubSubMessagesInTextFormat",
+                  "label": "Publishing Events to a Google Pub/Sub Topic"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishTcpInBinaryFormat",
+                  "label": "Publishing Binary Events via TCP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishWebSocketInXmlFormat",
+                  "label": "Publishing XML Events via WebSocket"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishPrometheusMetricsHTTPServer",
+                  "label": "Publishing Consumed Events to Prometheus Metrics and Exposing then via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-influxdb",
+                  "label": "Working with an influxDB Store"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishKafkaInBinaryFormat",
+                  "label": "Publishing Binary Events via Kafka"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishJmsInKeyvalueFormat",
+                  "label": "Publishing Key-value events via JMS"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpInXmlFormat",
+                  "label": "Publishing XML Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpOAuthRequestWithRefreshToken",
+                  "label": "Publishing HTTP Events to an OAuth-protected Endpoint while Using a Refresh Token Grant Type"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpOAuthRequestResponse",
+                  "label": "Publishing HTTP Events via an OAuth-protected Endpoint"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-solr",
+                  "label": "Receiving Events via Simulator and Persisting in SOLR Store"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishHttpInJsonFormat",
+                  "label": "Publishing JSON Events via HTTP"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-rdbms",
+                  "label": "Receiving Events via Simulator and Persisting in RDBMS Store"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/store-cassandra",
+                  "label": "Receive Events via Simulator and Persist in Cassandra Store"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishKafkaInAvroFormatUsingSchemaRegistry",
+                  "label": "Publishing Avro Events via Kafka"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/AmazonS3SinkSample",
+                  "label": "Publishing Aggregated Events to the Amazon AWS S3 Bucket"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/GCSSinkSample",
+                  "label": "Publishing Events to a GCS Bucket"
+                },
+                {
+                  "type": "doc",
+                  "id": "examples/PublishEmailInTextFormat",
+                  "label": "Publishing Text Events via Email"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Setup and Install",
+      "items": [
+        {
+          "type": "category",
+          "label": "Install",
+          "items": [
+            {
+              "type": "category",
+              "label": "Installing the WSO2 Integrator: SI",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "setup/installing-si-in-vm",
+                  "label": "Install SI"
+                },
+                {
+                  "type": "doc",
+                  "id": "setup/installing-as-a-windows-service",
+                  "label": "Installing as a Windows Service"
+                },
+                {
+                  "type": "doc",
+                  "id": "setup/installing-si-as-a-linux-service",
+                  "label": "Installing as a Linux Service"
+                }
+              ]
+            },
+            {
+              "type": "doc",
+              "id": "connectors/downloading-and-Installing-Siddhi-Extensions",
+              "label": "Installing Siddhi Extensions"
+            },
+            {
+              "type": "category",
+              "label": "Running the WSO2 Integrator: SI in Containers",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "setup/installing-si-using-docker",
+                  "label": "Installing in Docker"
+                },
+                {
+                  "type": "doc",
+                  "id": "setup/installing-si-using-kubernetes",
+                  "label": "Installing in Kubernetes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Migrate",
+          "items": [
+            {
+              "type": "doc",
+              "id": "setup/upgrading-from-4.3.x-to-4.4.0",
+              "label": "Upgrading to 4.4.0"
+            },
+            {
+              "type": "doc",
+              "id": "setup/upgrading-si",
+              "label": "Upgrade from WSO2 Enterprise Integrator"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Deploy",
+          "items": [
+            {
+              "type": "doc",
+              "id": "setup/deploying-si-as-a-single-deployment",
+              "label": "Single Deployment"
+            },
+            {
+              "type": "doc",
+              "id": "setup/deploying-si-as-minimum-ha-cluster",
+              "label": "Minimum HA Cluster"
+            },
+            {
+              "type": "doc",
+              "id": "setup/deploying-si-as-an-active-active-deployment",
+              "label": "Active-Active Cluster"
+            },
+            {
+              "type": "doc",
+              "id": "setup/deploying-si-as-a-scalable-cluster",
+              "label": "Scalable Cluster"
+            },
+            {
+              "type": "doc",
+              "id": "setup/deploying-si-as-minimum-ha-cluster-in-aws-ecs",
+              "label": "Minimum HA Cluster in AWS ECS"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Set-up",
+          "items": [
+            {
+              "type": "doc",
+              "id": "setup/production-checklist",
+              "label": "Production Checklist"
+            },
+            {
+              "type": "doc",
+              "id": "setup/configuring-data-sources",
+              "label": "Configuring Datasources"
+            },
+            {
+              "type": "doc",
+              "id": "admin/working-with-Keystores",
+              "label": "Working with Keystores"
+            },
+            {
+              "type": "doc",
+              "id": "admin/user-management",
+              "label": "User Management"
+            },
+            {
+              "type": "doc",
+              "id": "admin/configuring-Database-and-File-System-State-Persistence",
+              "label": "Configuring State Persistence"
+            },
+            {
+              "type": "doc",
+              "id": "admin/configuring-Cluster-Coordination",
+              "label": "Configuring Cluster Coordination"
+            },
+            {
+              "type": "doc",
+              "id": "admin/protecting-sensitive-data-via-the-secure-vault",
+              "label": "Protecting Sensitive Data via the Secure Vault"
+            },
+            {
+              "type": "doc",
+              "id": "admin/adding-third-party-non-osgi-libraries",
+              "label": "Adding Third Party Non OSGi Libraries"
+            },
+            {
+              "type": "doc",
+              "id": "ref/configuring-default-ports",
+              "label": "Configuring Default Ports"
+            },
+            {
+              "type": "doc",
+              "id": "admin/monitoring-received-events-count-via-logs",
+              "label": "Enabling Logs for Received Event Count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Develop",
+      "items": [
+        {
+          "type": "doc",
+          "id": "develop/si-overview",
+          "label": "Overview"
+        },
+        {
+          "type": "doc",
+          "id": "develop/working-with-the-graphical-view",
+          "label": "Working with the Graphical View"
+        },
+        {
+          "type": "doc",
+          "id": "develop/build-siddhi-app-with-graphical-view",
+          "label": "Build a Siddhi Application with the Graphical View"
+        },
+        {
+          "type": "doc",
+          "id": "develop/configuring-extension-dependencies",
+          "label": "Configuring Extension Dependencies"
+        },
+        {
+          "type": "doc",
+          "id": "develop/testing-a-Siddhi-Application",
+          "label": "Running and Testing Siddhi Applications"
+        },
+        {
+          "type": "doc",
+          "id": "develop/exporting-Siddhi-Applications",
+          "label": "Exporting Siddhi Applications"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Observability",
+      "items": [
+        {
+          "type": "doc",
+          "id": "admin/working-with-integration-control-plane",
+          "label": "Integration Control Plane"
+        },
+        {
+          "type": "category",
+          "label": "Monitoring SI via Dashboards",
+          "items": [
+            {
+              "type": "doc",
+              "id": "admin/setting-up-grafana-dashboards",
+              "label": "Configuring Dashboards"
+            },
+            {
+              "type": "doc",
+              "id": "admin/managing-grafana-dashboards",
+              "label": "Managing Dashboards"
+            },
+            {
+              "type": "category",
+              "label": "Monitoring SI",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "admin/monitoring-si-performance-via-grafana",
+                  "label": "Overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-overall-statistics",
+                  "label": "Viewing Overall Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-server-statistics",
+                  "label": "Viewing Server Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-stream-statistics",
+                  "label": "Viewing Stream Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-source-statistics",
+                  "label": "Viewing Source Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-sink-statistics",
+                  "label": "Viewing Sink Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-query-statistics",
+                  "label": "Viewing Query Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-window-statistics",
+                  "label": "Viewing Window Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-trigger-statistics",
+                  "label": "Viewing Trigger Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-table-statistics",
+                  "label": "Viewing Table Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-aggregation-statistics",
+                  "label": "Viewing Aggregation Statistics"
+                },
+                {
+                  "type": "doc",
+                  "id": "admin/viewing-on-demand-query-statistics",
+                  "label": "Viewing On Demand Query Statistics"
+                }
+              ]
+            },
+            {
+              "type": "doc",
+              "id": "admin/viewing-dashboards",
+              "label": "Monitoring ETL Flows"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Connectors",
+      "items": [
+        {
+          "type": "doc",
+          "id": "connectors/connectors-overview",
+          "label": "WSO2 Integrator: SI Connectors Overview"
+        },
+        {
+          "type": "doc",
+          "id": "connectors/downloading-and-Installing-Siddhi-Extensions",
+          "label": "Downloading and Installing Siddhi Connectors"
+        },
+        {
+          "type": "doc",
+          "id": "connectors/writing-Custom-Siddhi-Extensions",
+          "label": "Writing Custom Siddhi Extensions"
+        },
+        {
+          "type": "doc",
+          "id": "connectors/configuring-System-Parameters-for-Siddhi-Extensions",
+          "label": "Configuring System Parameters for Siddhi Extensions"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "References",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ref/environment-compatibility",
+          "label": "Environment Compatibility"
+        },
+        {
+          "type": "category",
+          "label": "Streaming Integration REST API Guide",
+          "items": [
+            {
+              "type": "doc",
+              "id": "ref/rest-api-guide-overview",
+              "label": "REST API Guide Overview"
+            },
+            {
+              "type": "doc",
+              "id": "ref/siddhi-Application-Management-APIs",
+              "label": "Siddhi Application Management APIs"
+            },
+            {
+              "type": "doc",
+              "id": "ref/permission-apis",
+              "label": "Permission APIs"
+            },
+            {
+              "type": "doc",
+              "id": "ref/business-Rules-APIs",
+              "label": "Business Rules APIs"
+            },
+            {
+              "type": "doc",
+              "id": "ref/store-APIs",
+              "label": "Store APIs"
+            },
+            {
+              "type": "doc",
+              "id": "ref/healthcheck-APIs",
+              "label": "Healthcheck APIs"
+            },
+            {
+              "type": "doc",
+              "id": "ref/hTTP-Status-Codes",
+              "label": "HTTP Status Codes"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "ref/performance-analysis-results",
+          "label": "Performance Analysis Results"
+        }
+      ]
+    }
+  ]
+}
