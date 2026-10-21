@@ -352,11 +352,13 @@ attributes are stored.
 "define table Footable(time long, date string);
 ```
     
-    ## MongoDB
-    
-    #### Query syntax
-    
-    The following is the query syntax to define a MongoDB event table.
+```
+## MongoDB
+
+#### Query syntax
+
+The following is the query syntax to define a MongoDB event table.
+```
     
 ```sql
 @Store(type="mongodb", mongodb.uri="<MONGODB CONNECTION URI>")
@@ -365,27 +367,29 @@ attributes are stored.
 define table <TABLE_NME> (<ATTRIBUTE1_NAME> <ATTRIBUTE1_TYPE>, <ATTRIBUTE2_NAME> <ATTRIBUTE2_TYPE>, <ATTRIBUTE3_NAME> <ATTRIBUTE3_TYPE>, ...);
 ```
     
-    The `         mongodb.uri        ` parameter specifies the URI via which
-    MongoDB user store is accessed.
-    
-    In addition, the following annotations are used in the MongoDB
-    definition.
-    
-    -   `                     @primary                   ` : This specifies
-        a list of comma-separated values to be treated as unique fields in
-        the table. Each record in the table must have a unique combination
-        of values for the fields specified here.
-    -   `                     @index                   ` : This specifies
-        the fields that must be indexed at the database level. You can
-        specify multiple values as a comma separated list.
-    
-    #### Example
-    
-    The following query defines a MongoDB table named
-    `         FooTable        ` with the `         symbol        ` ,
-    `         price        ` , and `         volume        ` attributes. The
-    `         symbol        ` attribute is considered the primary key and it
-    is also indexed.
+```
+The `         mongodb.uri        ` parameter specifies the URI via which
+MongoDB user store is accessed.
+
+In addition, the following annotations are used in the MongoDB
+definition.
+
+-   `                     @primary                   ` : This specifies
+    a list of comma-separated values to be treated as unique fields in
+    the table. Each record in the table must have a unique combination
+    of values for the fields specified here.
+-   `                     @index                   ` : This specifies
+    the fields that must be indexed at the database level. You can
+    specify multiple values as a comma separated list.
+
+#### Example
+
+The following query defines a MongoDB table named
+`         FooTable        ` with the `         symbol        ` ,
+`         price        ` , and `         volume        ` attributes. The
+`         symbol        ` attribute is considered the primary key and it
+is also indexed.
+```
     
 ```sql
 @Store(type="mongodb", mongodb.uri="mongodb://admin:admin@localhost:27017/Foo?ssl=true")

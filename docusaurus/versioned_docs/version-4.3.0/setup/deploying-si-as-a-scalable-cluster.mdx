@@ -72,29 +72,31 @@ partition. In addition, there should be a logic to consume eventsfrom outside an
 
 e.g.,
 
-    // Stream defined with distributed sink with partitioned stratergy      
-    @Sink(type = 'http',
-              @map(type='json'),
-              @distribution(strategy='partitioned', partitionKey='userTenantDomain',
-              @destination(publisher.url='http://Ip1:8009/Request'),
-              @destination(publisher.url='http://Ip2:8009/Request')))
-    define stream Request (meta_clientType string,
-         applicationConsumerKey string,
-         applicationName string,
-         applicationId string,
-         applicationOwner string,
-         apiContext string,
-         apiName string,
-         apiVersion string,
-         apiCreator string,,
-         apiTier string,
-         apiHostname string,
-         username string,
-         userTenantDomain string,,
-         requestTimestamp long,
-         throttledOut bool,
-         responseTime long,
-         backendTime long);
+```
+// Stream defined with distributed sink with partitioned stratergy      
+@Sink(type = 'http',
+          @map(type='json'),
+          @distribution(strategy='partitioned', partitionKey='userTenantDomain',
+          @destination(publisher.url='http://Ip1:8009/Request'),
+          @destination(publisher.url='http://Ip2:8009/Request')))
+define stream Request (meta_clientType string,
+     applicationConsumerKey string,
+     applicationName string,
+     applicationId string,
+     applicationOwner string,
+     apiContext string,
+     apiName string,
+     apiVersion string,
+     apiCreator string,,
+     apiTier string,
+     apiHostname string,
+     username string,
+     userTenantDomain string,,
+     requestTimestamp long,
+     throttledOut bool,
+     responseTime long,
+     backendTime long);
+```
          
     
 According to above distributed sink configuration, events that arrive at the `Request` stream are partitioned based on the
@@ -122,12 +124,14 @@ partition the Cluster Configuration **group id** should be different for each cl
 Sample cluster configuration can be as below  :
 
     
-      - cluster.config:
-          enabled: true
-          groupId:  group 1
-          coordinationStrategyClass: org.wso2.carbon.cluster.coordinator.rdbms.RDBMSCoordinationStrategy
-          strategyConfig:
-            datasource: WSO2_CLUSTER_DB
-            heartbeatInterval: 5000
-            heartbeatMaxRetry: 5
-            eventPollingInterval: 5000
+```
+  - cluster.config:
+      enabled: true
+      groupId:  group 1
+      coordinationStrategyClass: org.wso2.carbon.cluster.coordinator.rdbms.RDBMSCoordinationStrategy
+      strategyConfig:
+        datasource: WSO2_CLUSTER_DB
+        heartbeatInterval: 5000
+        heartbeatMaxRetry: 5
+        eventPollingInterval: 5000
+```

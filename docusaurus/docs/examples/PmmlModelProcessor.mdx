@@ -37,7 +37,7 @@ If you edit this application while it's running, stop the application -> Save ->
 Send events through one or more of the following methods.
 * You may send events to SweetProductionStream, via event simulator:
     1. Open the event simulator by clicking on the second icon or pressing Ctrl+Shift+I.
-	2. In the Single Simulation tab of the panel, specify the values as follows:
+    2. In the Single Simulation tab of the panel, specify the values as follows:
         * Siddhi App Name  : PmmlModelProcessor
         * Stream Name     : SweetProductionStream
     3. In the name and amount fields, enter 'candy', 20, 23 respectively and then click Send to send the event.
@@ -53,7 +53,7 @@ Send events through one or more of the following methods.
     1. Install Postman from [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
     2. Launch the application.
     3. Make a 'Post' request to the 'http://localhost:9390/simulation/single' endpoint. Set the Content-Type to 'text/plain' and set the request body in text as follows:
-	\{"streamName": "SweetProductionStream", "siddhiAppName": "PmmlModelProcessor","data": ["candy", 20, 23]\}
+    \{"streamName": "SweetProductionStream", "siddhiAppName": "PmmlModelProcessor","data": ["candy", 20, 23]\}
     4. Click 'send'. If there is no error, the following messages are shown on the console:
         *  "status": "OK",
         *  "message": "Single Event simulation started successfully"

@@ -11,22 +11,22 @@ This application demonstrates how to use siddhi-io-prometheus for publishing eve
 ## Prerequisites:
 1. The following steps must be executed to enable WSO2 SP to publish events to Prometheus
     1. Download Prometheus server 'prometheus-2.5.0' from here : https://prometheus.io/download/#prometheus
-	   And extract the file in a preferred location.
-	2. Open the prometheus.yml file from \{prometheus\} directory and add the following text under "scrape_configs:"
-		" - job_name: 'server'
-		    honor_labels: true
-		    static_configs:
-		    - targets: ['localhost:9080']"
+       And extract the file in a preferred location.
+    2. Open the prometheus.yml file from \{prometheus\} directory and add the following text under "scrape_configs:"
+        " - job_name: 'server'
+            honor_labels: true
+            static_configs:
+            - targets: ['localhost:9080']"
         * you can replace values for 'localhost:9080' in targets according to your preferred host and port.
-	      In that case, the 'server.url' option must be included in the Sink definition with the same host and port values.
+          In that case, the 'server.url' option must be included in the Sink definition with the same host and port values.
 
     3. Download and copy the prometheus client jars to the \{WSO2SIHome\}/lib directory as follows.
         1. Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to \{WSO2SIHome\}/lib directory.
             * simpleclient_pushgateway-0.5.0.jar
             * simpleclient_common-0.5.0.jar
             * simpleclient-0.5.0.jar
-		    * simpleclient_httpserver-0.5.0.jar
-	4. Navigate to \{prometheus\} and start prometheus server using ' ./prometheus --config.file="prometheus.yml" ' command
+            * simpleclient_httpserver-0.5.0.jar
+    4. Navigate to \{prometheus\} and start prometheus server using ' ./prometheus --config.file="prometheus.yml" ' command
 2. Start the editor WSO2 SP by giving this command in the terminal : sh editor.sh
 3. Save this sample
 
@@ -34,24 +34,24 @@ This application demonstrates how to use siddhi-io-prometheus for publishing eve
 1. Start the Siddhi application by clicking on 'Run'
 2. If the Siddhi application starts successfully, the following messages would be shown on the console,
     * PublishPrometheusMetricHTTPServer.siddhi - Started Successfully!
-	* SweetProductionStream has successfully connected at http://localhost:9080
+    * SweetProductionStream has successfully connected at http://localhost:9080
 
 ## Testing the Sample:
 * Send events through the event simulator:
     1. Open the event simulator by clicking on the second icon or pressing Ctrl+Shift+I.
-	2. In the Single Simulation tab of the panel, specify the values as follows:
+    2. In the Single Simulation tab of the panel, specify the values as follows:
         * Siddhi App Name  : PublishPrometheusMetricHTTPServer
         * Stream Name     : SweetProductionStream
     3. In the name and amount fields, enter 'toffees' and '55.4' respectively and then click Send to send the event.
     4. Send some more events as follows,
-		    ['gingerbread', 72.3],
-	 	    ['toffees', 32.4],
-		    ['lollipop', 23.8].
+            ['gingerbread', 72.3],
+            ['toffees', 32.4],
+            ['lollipop', 23.8].
 
 ## Viewing the Results:
 1. See the output events through one or more of the following methods:
-	* Open the url "http://localhost:9080/metrics" in your browser. The folllowing output will be displayed,
-	    - "# HELP SweetProductionStream help for counter SweetProductionStream"
+    * Open the url "http://localhost:9080/metrics" in your browser. The folllowing output will be displayed,
+        - "# HELP SweetProductionStream help for counter SweetProductionStream"
         - "# TYPE SweetProductionStream counter"
         - "SweetProductionStream 72.3"
         - "SweetProductionStream 23.8"

@@ -14,13 +14,13 @@ This application demonstrates how to configure WSO2 Streaming Integrator Tooling
 ## Prerequisites
 
 1. Setup ActiveMQ
-	* Download [activemq-client-5.x.x.jar](https://repo1.maven.org/maven2/org/apache/activemq/activemq-client/5.9.0/activemq-client-5.9.0.jar).
-	* Download [apache-activemq-5.x.x-bin.zip](http://archive.apache.org/dist/activemq/apache-activemq/5.9.0/apache-activemq-5.9.0-bin.zip).
-	* Convert the ActiveMQ `activemq-client-5.x.x.jar` to an OSGI bundle and add the converted bundle to `<SI-Home>/lib/` directory (See Note: To convert ActiveMQ lib to OSGI).
-	* Unzip the `apache-activemq-5.x.x-bin.zip` and copy the following ActiveMQ libs in `apache-activemq-5.x.x/lib` to `<SI-Tooling-Home>/samples/sample-clients/lib` and `<SI-Tooling-Home>/lib`.
-		- `hawtbuf-1.9.jar`
-		- `geronimo-j2ee-management_1.1_spec-1.0.1.jar`
-		- `geronimo-jms_1.1_spec-1.1.1.jar`
+    * Download [activemq-client-5.x.x.jar](https://repo1.maven.org/maven2/org/apache/activemq/activemq-client/5.9.0/activemq-client-5.9.0.jar).
+    * Download [apache-activemq-5.x.x-bin.zip](http://archive.apache.org/dist/activemq/apache-activemq/5.9.0/apache-activemq-5.9.0-bin.zip).
+    * Convert the ActiveMQ `activemq-client-5.x.x.jar` to an OSGI bundle and add the converted bundle to `<SI-Home>/lib/` directory (See Note: To convert ActiveMQ lib to OSGI).
+    * Unzip the `apache-activemq-5.x.x-bin.zip` and copy the following ActiveMQ libs in `apache-activemq-5.x.x/lib` to `<SI-Tooling-Home>/samples/sample-clients/lib` and `<SI-Tooling-Home>/lib`.
+        - `hawtbuf-1.9.jar`
+        - `geronimo-j2ee-management_1.1_spec-1.0.1.jar`
+        - `geronimo-jms_1.1_spec-1.1.1.jar`
 2. Save this sample.
 3. If there is no syntax error, the following message is shown on the console:
 
@@ -35,25 +35,25 @@ This application demonstrates how to configure WSO2 Streaming Integrator Tooling
 To convert ActiveMQ lib to OSGI,
 
 1. Navigate to &lt;SI-Tooling-Home>/bin and run the following command:
-	- For Linux:
+    - For Linux:
 
 	```bash
 	./icf-provider.sh org.apache.activemq.jndi.ActiveMQInitialContextFactory <Downloaded Jar Path>/activemq-client-5.x.x.jar <Output Jar Path>
 	```
 
-	- For Windows:
+    - For Windows:
 
 	```bash
 	./icf-provider.bat org.apache.activemq.jndi.ActiveMQInitialContextFactory <Downloaded Jar Path>\activemq-client-5.x.x.jar <Output Jar Path>
 	```
 
-	* Provide privileges if necessary using `chmod +x icf-provider.(sh|bat)`.
-	* Also, this will register the `InitialContextFactory` implementation according to the OSGi JNDI spec.
+    * Provide privileges if necessary using `chmod +x icf-provider.(sh|bat)`.
+    * Also, this will register the `InitialContextFactory` implementation according to the OSGi JNDI spec.
 2. If converted successfully then it will create `activemq-client-5.x.x` directory in the `<Output Jar Path>` with OSGi converted and original jars:
-	- `activemq-client-5.x.x.jar` (Original Jar)
-	- `activemq-client-5.x.x_1.0.0.jar` (OSGi converted Jar)
+    - `activemq-client-5.x.x.jar` (Original Jar)
+    - `activemq-client-5.x.x_1.0.0.jar` (OSGi converted Jar)
 
-	Also, following messages would be shown on the terminal
+    Also, following messages would be shown on the terminal
 
 	```bash
 	- INFO: Executing 'jar uf <absolute_path>/activemq-client-5.x.x/activemq-client-5.x.x.jar -C <absolute_path>/activemq-client-5.x.x /internal/CustomBundleActivator.class'
@@ -81,8 +81,8 @@ To convert ActiveMQ lib to OSGI,
 ##### Send events to jms sink, via event simulator
 1. Open the event simulator by clicking on the second icon or pressing Ctrl+Shift+I.
 2. In the Single Simulation tab of the panel, specify the values as follows:
-	* Siddhi App Name  : PublishJmsInXmlFormat
-	* Stream Name      : SweetProductionStream
+    * Siddhi App Name  : PublishJmsInXmlFormat
+    * Stream Name      : SweetProductionStream
 3. In the name and amount fields, enter the following and then click Send to send the event.
 
 	```csv

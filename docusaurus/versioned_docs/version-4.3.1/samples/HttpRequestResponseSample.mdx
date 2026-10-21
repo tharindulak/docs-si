@@ -23,7 +23,7 @@ This application demonstrates how to configure WSO2 Integrator: SI Tooling to se
 2. Send events using one or more of the following methods.
     * Send events with http server through the event simulator:
         1. Open the event simulator by clicking on the second icon or pressing Ctrl+Shift+I.
-	    2. In the Single Simulation tab of the panel, specifiy the values as follows:
+        2. In the Single Simulation tab of the panel, specifiy the values as follows:
             * Siddhi App Name  : HttpRequestResponseSample
             * Stream Name     : SweetProductionStream
         3. In the name and amount fields, enter 'toffees' and '75.6' respectively and then click Send to send the event.
@@ -39,7 +39,7 @@ This application demonstrates how to configure WSO2 Integrator: SI Tooling to se
         1. Install the 'Postman' application from Chrome web store.
         2. Launch the application.
         3. Make a 'Post' request to the 'http://localhost:9390/simulation/single' endpoint. Set the Content-Type to 'text/plain' and set the request body in text as follows:
-	\{"streamName": "SweetProductionStream", "siddhiAppName": "HttpRequestResponseSample","data": ['toffees', 75.6]\}
+    \{"streamName": "SweetProductionStream", "siddhiAppName": "HttpRequestResponseSample","data": ['toffees', 75.6]\}
         4. Click 'send'. If there is no error, the following messages are shown on the console:
             *  "status": "OK",
             *  "message": "Single Event simulation started successfully"
